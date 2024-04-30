@@ -1,7 +1,9 @@
 # 机器人语音合成功能模块
 # 使用教程
 ### 下载预训练模型
-所有的
+预训练模型获取链接如下：
+https://pan.baidu.com/s/1XCW9O5YBkn8K3T_aY_GVBA?pwd=1nfy 
+下载文件夹后将其放置在项目根目录下即可。
 ```
 python ASVspoof15&19_LA_Data_Preparation.py 
 ```
