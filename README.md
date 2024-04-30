@@ -1,6 +1,7 @@
 # 机器人语音合成功能模块
 # 使用教程
-### Data Preparation
+### 下载预训练模型
+所有的
 ```
 python ASVspoof15&19_LA_Data_Preparation.py 
 ```
