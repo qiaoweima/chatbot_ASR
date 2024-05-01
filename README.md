@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PPASR流式与非流式语音识别
 
 ![python version](https://img.shields.io/badge/python-3.7+-orange.svg)
@@ -140,3 +141,7 @@ python infer_path.py --wav_path=./dataset/test_vad.wav --is_long_audio=True
  - https://github.com/PaddlePaddle/PaddleSpeech
  - https://github.com/jiwidi/DeepSpeech-pytorch
  - https://github.com/wenet-e2e/WenetSpeech
+=======
+# chatbot_ASR
+The ASR implementation for chatbot
+>>>>>>> main
