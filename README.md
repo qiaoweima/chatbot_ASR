@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PPASR流式与非流式语音识别
 
 ![python version](https://img.shields.io/badge/python-3.7+-orange.svg)
@@ -84,30 +85,27 @@
  - 下载作者提供的模型或者训练模型，然后执行[导出模型](./docs/export_model.md)，使用`infer_path.py`预测音频，通过参数`--wav_path`指定需要预测的音频路径，完成语音识别，详情请查看[模型部署](./docs/infer.md)。
 ```shell script
 python infer_path.py --wav_path=./dataset/test.wav
+=======
+# 语音识别功能模块
+# 使用教程
+### 配置环境
+```
+pip install -r requirements.txt
+>>>>>>> 6bc2d5862e985b759ffe33283e568d9287e41ffe
 ```
 
-输出结果：
+### 下载预训练模型
+预训练模型获取链接如下：
+
+https://pan.baidu.com/s/1XCW9O5YBkn8K3T_aY_GVBA?pwd=1nfy 
+
+下载文件夹后将其放置在项目根目录下即可。
+
+### 开启服务程序
 ```
------------  Configuration Arguments -----------
-alpha: 1.2
-beam_size: 10
-beta: 0.35
-cutoff_prob: 1.0
-cutoff_top_n: 40
-decoding_method: ctc_greedy
-enable_mkldnn: False
-is_long_audio: False
-lang_model_path: ./lm/zh_giga.no_cna_cmn.prune01244.klm
-mean_std_path: ./dataset/mean_std.npz
-model_dir: ./models/infer/
-to_an: True
-use_gpu: True
-use_tensorrt: False
-vocab_path: ./dataset/zh_vocab.txt
-wav_path: ./dataset/test.wav
-------------------------------------------------
-消耗时间：132, 识别结果: 近几年不但我用书给女儿儿压岁也劝说亲朋不要给女儿压岁钱而改送压岁书, 得分: 94
+(CUDA_VISIBLE_DEVICES=1) python infer_server.py
 ```
+<<<<<<< HEAD
 
 
  - 长语音预测
@@ -145,3 +143,6 @@ python infer_path.py --wav_path=./dataset/test_vad.wav --is_long_audio=True
 # chatbot_ASR
 The ASR implementation for chatbot
 >>>>>>> main
+=======
+括号内为指定在哪一块显卡上运行，可加可不加，是为了防止在第一块显卡上有程序在运行，本asr服务所需显存不够，则可指定其余空闲的显卡来提供服务
+>>>>>>> 6bc2d5862e985b759ffe33283e568d9287e41ffe
