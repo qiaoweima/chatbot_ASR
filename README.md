@@ -1,6 +1,6 @@
 # 语音识别功能模块
 # 使用教程
-###配置环境
+### 配置环境
 ```
 pip install -r requirements.txt
 ```
